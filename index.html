@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Laurent's Offline AES Locker</title>
+  <title>Offline AES Locker</title>
   <style>
     :root { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
     body { margin: 0; background: #0b1220; color: #e6edf3; }
@@ -31,7 +31,7 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Laurent's Offline AES Locker</h1>
+      <h1>Offline AES Locker</h1>
       <p class="muted">Encrypt and decrypt short secrets locally in your browser. Nothing leaves this page.</p>
 
       <label for="secret">Secret (plain text)</label>
@@ -40,12 +40,12 @@
       <div class="row">
         <div>
           <label for="pass">Passphrase (memorizable secret)</label>
-          <input id="pass" type="password" placeholder="9 digit PIN code" autocomplete="off" />
+          <input id="pass" type="password" placeholder="Your little secret." autocomplete="off" />
           <div class="hint">This passphrase derives the key. You must remember it to decrypt later.</div>
         </div>
         <div>
           <label for="iterations">PBKDF2 iterations</label>
-          <input id="iterations" type="text" placeholder="Year Shinra was born" autocomplete="off" />
+          <input id="iterations" type="text" placeholder="Shinra" autocomplete="off" />
           <div class="hint">Higher is slower but stronger. Keep the same value when decrypting.</div>
         </div>
       </div>
