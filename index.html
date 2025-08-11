@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Offline AES Locker</title>
+  <title>Pumukel</title>
   <link rel="icon" href="data:image/x-icon;base64,AAABAAMAICAAAAAAIABcBQAANgAAAEBAAAAAACAA/QsAAJIFAACAgAAAAAAgAJAdAACPEQAAiVB..." type="image/x-icon">
   <meta http-equiv="Content-Security-Policy"
         content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
@@ -37,8 +37,8 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Offline AES Locker</h1>
-      <p class="muted">Encrypt and decrypt short secrets locally in your browser. Nothing leaves this page.</p>
+      <h1>Pumukel</h1>
+      <p class="muted">Encrypt and decrypt short secrets locally.</p>
 
       <label for="secret">Secret (plain text)</label>
       <textarea id="secret" placeholder="Paste your password here to ENCRYPT, or leave empty when DECRYPTING."></textarea>
@@ -47,12 +47,12 @@
         <div>
           <label for="pass">Passphrase (memorizable secret)</label>
           <input id="pass" type="password" placeholder="Passphrase" autocomplete="new-password" autocapitalize="off" spellcheck="false" />
-          <div class="hint">This passphrase derives the key. You must remember it to decrypt later.</div>
+          <div class="hint">This passphrase derives the key.</div>
         </div>
         <div>
           <label for="iterations">PBKDF2 iterations</label>
           <input id="iterations" type="text" placeholder="Shinra" autocapitalize="off" spellcheck="false"/>
-          <div class="hint">Higher is slower but stronger. Keep the same value when decrypting.</div>
+          <div class="hint">Higher is slower but stronger.</div>
         </div>
       </div>
 
